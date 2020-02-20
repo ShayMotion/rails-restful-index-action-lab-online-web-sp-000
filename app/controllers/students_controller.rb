@@ -1,5 +1,6 @@
-class StudentController < Applicationcontroller::Base
-  
-get 'index' 
-render '/index'
+class StudentsController < ApplicationController
+
+  def index
+    @students = Student.all
+  end
 end
